@@ -2,6 +2,7 @@ import { Niramit } from "next/font/google";
 import "./globals.css";
 
 import Nav from "@/components/Nav"
+import Footer from "@/components/Footer"
 
 const niramit = Niramit({
   weight: ['200', '300', '400', '500', '600', '700'],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       >
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

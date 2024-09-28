@@ -23,3 +23,14 @@ body {
     text-wrap: balance;
   }
 }
+
+fieldset {
+  @apply mb-12 sm:mb-8;
+}
+
+input,
+textarea,
+select,
+option {
+  @apply block w-full px-6 border border-[#BFBFBF] rounded-[12px] py-2 font-normal text-xl bg-white;
+}
