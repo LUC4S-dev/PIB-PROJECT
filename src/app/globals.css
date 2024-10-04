@@ -16,6 +16,7 @@
 
 body {
   font-family: var(--font-niramit);
+  background-color: #f1f1f1;
 }
 
 @layer utilities {

@@ -1,7 +1,7 @@
 import Container from "@/components/Container"
 import Button from "@/components/Button"
 import Image from "next/image"
-import Card from "@/components/Card";
+import RigthCard from "@/components/RigthCard";
 
 const pastores = [
   {
@@ -37,7 +37,7 @@ export default function Home() {
             <source src="/video/video.mp4" type="video/mp4" />
             Seu navegador não suporta a tag de vídeo.
           </video>
-          <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay escuro para melhorar a legibilidade do texto */}
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
         <div className="container relative z-10 flex items-center justify-center h-full mx-auto md:px-12">
           <div className="text-center lg:w-1/2">
@@ -53,8 +53,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
 
       <section className="grid h-screen place-items-center">
         <ul className="flex flex-col gap-24 md:gap-12">
@@ -137,8 +135,125 @@ export default function Home() {
         </div>
       </div>
 
-      <Card />
+      <RigthCard />
 
+      <div className="max-w-7xl mx-auto p-8">
+        {/* Título */}
+        <h1 className="text-3xl font-bold text-center text-blue-700 mb-6">
+          Nossos Jovens e Adolescentes
+        </h1>
+
+        {/* Texto descritivo */}
+        <p className="text-center text-gray-600 mb-12">
+          Donec vulputate semper ligula, et volutpat nisi dictum ut. Phasellus sed mi at nisi pretium ultricies tristique ut metus. Duis quis volutpat dui. Etiam in imperdiet quam. Nam convallis vestibulum leo nec fringilla. Sed tincidunt cursus lacus ut bibendum. Pellentesque non condimentum urna. Quisque dignissim varius aliquam. Pellentesque tincidunt vel tortor a viverra. Vestibulum euismod est et eros accumsan mattis.
+        </p>
+
+        {/* Grid de imagens */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Primeira imagem*/}
+          <div >
+            <Image
+              src="/img/jovens1.png"
+              alt="Lorem ipsum"
+              width={902}
+              height={627}
+              className="object-cover w-full max-w-[600px] min-w-[600px] md:min-w-0 md:max-w-full h-[430px] sm:h-[260px] md:my-6"
+            ></Image>
+          </div>
+
+          {/* Segunda imagem*/}
+
+          <div >
+            <Image
+              src="/img/jovens2.png"
+              alt="Lorem ipsum"
+              width={902}
+              height={627}
+              className="object-cover w-full max-w-[600px] min-w-[600px] md:min-w-0 md:max-w-full h-[430px] sm:h-[260px] md:my-6"
+            ></Image>
+          </div>
+
+          {/*terceira imagem */}
+          <div className="col-span-2">
+            <Image
+              src="/img/jovens3.png"
+              alt="Lorem ipsum"
+              width={902}
+              height={627}
+              className="object-cover w-full md:min-w-0 md:max-w-full h-[430px] sm:h-[260px] md:my-6"
+            ></Image>
+          </div>
+
+        </div>
+
+        {/* Texto adicional abaixo */}
+        <p className="text-center text-gray-600 mt-12">
+          Aenean consequat nec velit a pulvinar. Quisque nisi arcu, iaculis eu sollicitudin et, imperdiet ut odio.
+        </p>
+      </div>
+
+      <div className="flex flex-col items-center py-12 px-6">
+        <h1 className="text-4xl font-bold text-indigo-600 mb-12">Nossos Corais</h1>
+
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-12 max-w-5xl p-10 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] rounded-lg ">
+          {/* Coral Paz Eternal */}
+          <div className="">
+            <h2 className="text-2xl font-semibold text-indigo-600">Coral Paz Eternal</h2>
+            <p className="text-gray-600 mt-2">Regente: Pr. Israel Siqueira</p>
+            <p className="text-gray-600">Participantes: membros a partir de 16 anos</p>
+            <p className="text-gray-600">Ensaios: terças-feira, às 19h30</p>
+          </div>
+
+          {/* Coral Ao Redor do Mestre */}
+          <div className="">
+            <h2 className="text-2xl font-semibold text-indigo-600">Coral Ao Redor do Mestre</h2>
+            <p className="text-gray-600 mt-2">Regente: Lislie Borges</p>
+            <p className="text-gray-600">Participantes: crianças de 0–10 anos</p>
+            <p className="text-gray-600">Ensaios: sextas-feiras, às 18h30</p>
+          </div>
+
+          {/* Coral Essência de Deus */}
+          <div className="">
+            <h2 className="text-2xl font-semibold text-indigo-600">Coral Essência de Deus</h2>
+            <p className="text-gray-600 mt-2">Regente: Juliane Seraphim Viana</p>
+            <p className="text-gray-600">Participantes: membros a partir de 16 anos</p>
+            <p className="text-gray-600">Ensaios: sábados, às 14h30</p>
+          </div>
+
+          {/* Coral Perfeita Adoração */}
+          <div className="">
+            <h2 className="text-2xl font-semibold text-indigo-600">Coral Perfeita Adoração</h2>
+            <p className="text-gray-600 mt-2">Regente: Ana Clara Moreira</p>
+            <p className="text-gray-600">Participantes: adolescentes de 12–17 anos</p>
+            <p className="text-gray-600">Ensaios: domingos, às 17h</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div className="flex flex-col items-center py-12 px-6">
+        <h1 className="text-4xl font-bold text-indigo-600 mb-12">As fases da salvação</h1>
+
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-2 gap-12 max-w-5xl p-10 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] rounded-lg ">
+          {/* Coral Paz Eternal */}
+          <div>
+            <h2 className="text-2xl font-semibold text-indigo-600 text-center">Justificação</h2>
+            <p className="text-gray-600 text-justify">Esta é a primeira fase da salvação, onde o pecador é declarado justo aos olhos de Deus. A justificação ocorre pela fé em Jesus Cristo e é um ato instantâneo da graça divina. É através da morte expiatória de Jesus na cruz que os pecadores são perdoados e reconciliados com Deus. A justificação é baseada na obra de Cristo, não nas obras do indivíduo, e é concedida pela graça mediante a fé (Efésios 2:8-9).</p>
+          </div>
+
+          {/* Coral Ao Redor do Mestre */}
+          <div>
+            <h2 className="text-2xl font-semibold text-indigo-600 text-center" >Santificação</h2>
+            <p className="text-gray-600 text-justify">A santificação é o processo contínuo pelo qual o crente é transformado à semelhança de Cristo. Após a justificação, os crentes são chamados a viver em santidade, separados do pecado e dedicados a Deus. Esse processo envolve a cooperação do crente com o Espírito Santo, que trabalha para produzir frutos espirituais e conformá-los à imagem de Cristo (Gálatas 5:22-23, Romanos 8:29). É um crescimento gradual que dura toda a vida, envolvendo disciplina espiritual, crescimento na fé e abandono do pecado.</p>
+          </div>
+
+          {/* Coral Essência de Deus */}
+          <div>
+            <h2 className="text-2xl font-semibold text-indigo-600 text-center">Glorificação</h2>
+            <p className="text-gray-600 text-justify">Esta é a fase final da salvação, que ocorre quando os crentes entram na presença gloriosa de Deus após a morte ou no retorno de Cristo. Na glorificação, os crentes recebem corpos ressuscitados e glorificados, livres do pecado e da corrupção (1 Coríntios 15:42-44). Eles experimentarão a plenitude da presença de Deus e desfrutarão da comunhão eterna com Ele. A glorificação completa a obra da salvação, trazendo a consumação final da redenção de Deus para Seu povo.</p>
+          </div>
+        </div>
+      </div>
 
     </>
   );
