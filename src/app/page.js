@@ -234,7 +234,7 @@ export default function Home() {
       <div className="flex flex-col items-center py-12 px-6">
         <h1 className="text-4xl font-bold text-indigo-600 mb-12">As fases da salvação</h1>
 
-        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-2 gap-12 max-w-5xl p-10 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] rounded-lg ">
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-2 gap-12 max-w-5xl p-10 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] rounded-lg">
           {/* Coral Paz Eternal */}
           <div>
             <h2 className="text-2xl font-semibold text-indigo-600 text-center">Justificação</h2>
@@ -252,6 +252,158 @@ export default function Home() {
             <h2 className="text-2xl font-semibold text-indigo-600 text-center">Glorificação</h2>
             <p className="text-gray-600 text-justify">Esta é a fase final da salvação, que ocorre quando os crentes entram na presença gloriosa de Deus após a morte ou no retorno de Cristo. Na glorificação, os crentes recebem corpos ressuscitados e glorificados, livres do pecado e da corrupção (1 Coríntios 15:42-44). Eles experimentarão a plenitude da presença de Deus e desfrutarão da comunhão eterna com Ele. A glorificação completa a obra da salvação, trazendo a consumação final da redenção de Deus para Seu povo.</p>
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center py-8">
+        <h1 className="text-2xl font-bold">Escalas dos Cultos</h1>
+
+        <div className="mt-4 border-t border-gray-300 w-1/3">
+          <p className="text-lg text-center mt-2">24/03/2024</p>
+        </div>
+
+        <div className="flex justify-between w-1/2 mt-6">
+          <p className="text-blue-500 font-semibold">Manhã</p>
+          <p className="text-gray-400">Noite</p>
+        </div>
+
+        <div className=""> 
+          <div className="grid grid-cols-2 gap-12 mt-6">
+            {/* Pregação */}
+            <div className="flex flex-col items-center">
+              <div className="text-2xl">✝️</div>
+              <p className="font-semibold">Pregação</p>
+              <p>Pastor Edson</p>
+            </div>
+
+            {/* Direção */}
+            <div className="flex flex-col items-center">
+              <div className="text-2xl">✝️</div>
+              <p className="font-semibold">Direção</p>
+              <p>Dc. Oscar Soares</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-4 gap-12 mt-10 p-10 shadow-[0.625rem_0.625rem_0.875rem_0_rgb(225,226,228),-0.5rem_-0.5rem_1.125rem_0_rgb(255,255,255)] rounded-lg ">
+
+
+          {/* Transmissão */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">💻</div>
+            <p className="font-semibold">Transmissão</p>
+            <p>Pedro Stabile Neto</p>
+          </div>
+
+          {/* Filmagem */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🎥</div>
+            <p className="font-semibold">Filmagem</p>
+            <p>Lucas Siqueira</p>
+          </div>
+
+          {/* Foto */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">📷</div>
+            <p className="font-semibold">Foto</p>
+            <p>Ana Beatriz Dana</p>
+          </div>
+
+          {/* Apoio */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🤝</div>
+            <p className="font-semibold">Apoio</p>
+            <p>Mateus Amaral</p>
+          </div>
+
+
+          {/* Regência */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🎼</div>
+            <p className="font-semibold">Regência</p>
+            <p>Gabriel de Carvalho</p>
+          </div>
+
+          {/* Piano */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🎹</div>
+            <p className="font-semibold">Piano</p>
+            <p>Lílian de Carvalho</p>
+          </div>
+
+          {/* Órgão */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🎹</div>
+            <p className="font-semibold">Órgão</p>
+            <p>Vânia Bianchini</p>
+          </div>
+
+          {/* Som */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🔊</div>
+            <p className="font-semibold">Som</p>
+            <p>Antônio Francisco, Luís Augusto</p>
+          </div>
+
+          {/* Microfone Volante */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🎤</div>
+            <p className="font-semibold">Microfone Volante</p>
+            <p>Gabriel de Carvalho</p>
+          </div>
+
+          {/* Apoio Internet */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🛜</div>
+            <p className="font-semibold">Apoio Internet</p>
+            <p>Lílian de Carvalho</p>
+          </div>
+
+          {/* Culto infantil */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">👩‍👦‍👦</div>
+            <p className="font-semibold">Culto Infantil</p>
+            <p>Vânia Bianchini</p>
+          </div>
+
+          {/* Berçário */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">👼🏽</div>
+            <p className="font-semibold">Berçário</p>
+            <p>Antônio Francisco, Luís Augusto</p>
+          </div>
+
+
+          {/* Recepçao */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🎼</div>
+            <p className="font-semibold">Recepção</p>
+            <p>Gabriel de Carvalho</p>
+          </div>
+
+          {/* Estacionamento */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🚗</div>
+            <p className="font-semibold">Estacionamento</p>
+            <p>Lílian de Carvalho</p>
+          </div>
+
+          {/* Aconselhamento */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🫂</div>
+            <p className="font-semibold">Aconselhamento</p>
+            <p>Vânia Bianchini</p>
+          </div>
+
+          {/* Diáconos */}
+          <div className="flex flex-col items-center">
+            <div className="text-2xl">🤵🏽‍♂️</div>
+            <p className="font-semibold">Diáconos</p>
+            <p>Antônio Francisco, Luís Augusto</p>
+          </div>
+
+
+          {/* Outros elementos, como microfone, berçário, estacionamento, diaconato, etc, podem seguir o mesmo padrão */}
         </div>
       </div>
 
